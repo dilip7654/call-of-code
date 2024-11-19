@@ -9,6 +9,8 @@ import {
 } from "@tabler/icons-react"
 import { Trophy , BrickWall , Users} from "lucide-react"
 
+
+
 export function FloatingNavbar() {
   const links = [
     {
@@ -39,13 +41,7 @@ export function FloatingNavbar() {
       ),
       href: "/#achievements",
     },
-    {
-      title: "Projects",
-      icon: (
-        <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "/projects",
-    },
+    
   ]
 
   return (
