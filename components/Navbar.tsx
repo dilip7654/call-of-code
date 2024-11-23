@@ -1,15 +1,10 @@
 import React from "react"
 import { FloatingDock } from "@/components/ui/floating-dock"
 import {
-  IconBrandGithub,
-  IconBrandX,
   IconHome,
-  IconNewSection,
   IconTerminal2,
 } from "@tabler/icons-react"
 import { Trophy , BrickWall , Users} from "lucide-react"
-
-
 
 export function FloatingNavbar() {
   const links = [
@@ -41,11 +36,17 @@ export function FloatingNavbar() {
       ),
       href: "/#achievements",
     },
-    
+    {
+      title: "Projects",
+      icon: (
+        <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "/projects",
+    },
   ]
 
   return (
-    <div className="fixed bottom-4 left-4 z-50 md:bottom-0 md:left-0 md:w-full md:flex md:justify-center md:pb-4">
+    <div className="fixed bottom-4 left-4 z-50  md:bottom-0 md:left-0 md:w-full md:flex md:justify-center md:pb-4">
       <FloatingDock 
         mobileClassName="flex-row space-x-2 origin-left"
         items={links}
@@ -53,15 +54,3 @@ export function FloatingNavbar() {
     </div>
   )
 }
-
-
-
-
-
-
-
-
-
-
-
-
